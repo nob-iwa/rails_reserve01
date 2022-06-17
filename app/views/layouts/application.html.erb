@@ -8,9 +8,34 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
 
   <body>
+    <header class="header">
+      <div class="header-inner">
+        <div class="header-left">
+          <a href= >
+            <img alt="サイトのロゴ" src="https://presite-potepancamp-rails-02.herokuapp.com/assets/logo.png">
+          </a>
+          <form action="" method="get">
+            <div class="search">
+              <input type="text" name="area" id="area" class="header-search" placeholder="エリア">
+              <i class="fa fa-map-marker"></i>	
+            </div>
+            <div class="search">
+              <input type="text" name="keyword" id="keyword" class="header-search" placeholder="キーワード">
+              <i class="fa fa-search"></i>
+            </div>
+            <input type="submit" name="commit" value class="d-none">
+          </form>
+        </div>
+        <div class="header-right"></div>
+      </div>
+    </header>
     <%= yield %>
+    <footer class="footer">
+      <p>©︎ 2020 POTEPAN.INC.</p>
+    </footer>
   </body>
 </html>
