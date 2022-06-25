@@ -20,5 +20,6 @@ module Myapp
     # config.eager_load_paths << Rails.root.join("extras")
     config.hosts << "df06e0962b9246d199a04d3f95e8cc64.vfs.cloud9.ap-northeast-1.amazonaws.com"
     config.hosts << ".amazonaws.com"
+    config.i18n.default_locale = :ja
   end
 end

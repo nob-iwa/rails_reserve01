@@ -30,9 +30,14 @@
             <input type="submit" name="commit" value class="d-none">
           </form>
         </div>
-        <div class="header-right"></div>
+        <div class="header-right">
+          <%= link_to "ログイン", new_user_session_path, class: "button-sign_in" %>
+          <%= link_to "登録する", new_user_registration_path, class: "button-sign_up" %>
+        </div>
       </div>
     </header>
+    <div class="notice"><%= notice %></div>
+    <div class="alert"><%= alert %></div>
     <%= yield %>
     <footer class="footer">
       <p>©︎ 2020 POTEPAN.INC.</p>
